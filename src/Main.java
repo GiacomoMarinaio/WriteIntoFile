@@ -1,5 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        WriteIntoFile writeIntoFile = new WriteIntoFile();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Scrivi qualcosa ");
+        String testo = scanner.nextLine();
+
+        writeIntoFile.ScriviDentroilFile(testo);
     }
 }
